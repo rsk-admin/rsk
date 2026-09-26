@@ -1,0 +1,39 @@
+.footer {
+    background-color: #ffffff;
+    padding: 25px 0;
+    /* Прижимает футер к низу страницы, если контента мало */
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.footer__copy {
+    font-size: clamp(12px, 1vw + 10px, 14px);
+    color: #000000;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    /* Плавное уменьшение отступа со 110px до 20px без лишних media-queries */
+    margin-left: clamp(20px, 8vw, 110px);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer__container {
+        justify-content: center;
+    }
+
+    .footer__copy {
+        margin-left: 0;
+        text-align: center;
+    }
+}
