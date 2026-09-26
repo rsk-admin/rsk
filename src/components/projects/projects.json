@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "title": "ЖК \"Флагман\"",
+        "location": "г. Раменское",
+        "year": "2018 год",
+        "status": "Дом сдан!",
+        "image": "/images/projects/flagman-ramenskoe/preview.webp",
+        "link": "#"
+    },
+    {
+        "id": 2,
+        "title": "ЖК \"Москворецкий\"",
+        "location": "г. Воскресенск",
+        "year": "2018 год",
+        "status": "Дом сдан!",
+        "image": "/images/projects/moskvoretsky-1-voskresensk/preview.webp",
+        "link": "#"
+    },
+    {
+        "id": 3,
+        "title": "ЖК \"На набережной\"",
+        "location": "г. Орехово-Зуево",
+        "year": "2018 год",
+        "status": "Дом сдан!",
+        "image": "/images/projects/na-naberezhnoy-orekhovo/preview.webp",
+        "link": "#"
+    },
+    {
+        "id": 4,
+        "title": "ЖК \"Центральный\"",
+        "location": "г. Воскресенск",
+        "year": "2018 год",
+        "status": "Дом сдан!",
+        "image": "/images/projects/tsentralny-voskresensk/preview.webp",
+        "link": "#"
+    },
+    {
+        "id": 5,
+        "title": "ЖК \"Центральный\"",
+        "location": "г. Ногинск",
+        "year": "2017 год",
+        "status": "Дом сдан!",
+        "image": "/images/projects/tsentralny-noginsk/preview.webp",
+        "link": "#"
+    },
+    {
+        "id": 6,
+        "title": "ЖК \"Москворецкий\"",
+        "location": "г. Воскресенск",
+        "year": "2017 год",
+        "status": "Дом сдан!",
+        "image": "/images/projects/moskvoretsky-2-voskresensk/preview.webp",
+        "link": "#"
+    },
+    {
+        "id": 7,
+        "title": "ул. Захарченко, 12",
+        "location": "г. Электросталь",
+        "year": "2019 год",
+        "status": "Дом в стадии постройки.",
+        "image": "/images/projects/zakharchenko-elektrostal/preview.webp",
+        "link": "#"
+    },
+    {
+        "id": 8,
+        "title": "Квартиры ул. Советская",
+        "location": "г. Воскресенск",
+        "year": "2018 год",
+        "status": "Дом сдан!",
+        "image": "/images/projects/sovetskaya-voskresensk/preview.webp",
+        "link": "#"
+    },
+    {
+        "id": 9,
+        "title": "Реализованные проекты",
+        "location": "",
+        "year": "2015 - 2018 год",
+        "status": "В данном разделе представлены жилые дома, заселенные в настоящий момент. Наши клиенты довольны качеством жилья. Присоединяйтесь!",
+        "image": "/images/projects/completed-projects/preview.webp",
+        "link": "#"
+    }
+]

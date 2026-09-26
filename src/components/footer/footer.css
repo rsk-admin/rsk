@@ -8,7 +8,7 @@
 
 .footer__container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 0 20px;
@@ -19,8 +19,6 @@
     color: #000000;
     font-weight: 400;
     letter-spacing: 0.2px;
-    /* Плавное уменьшение отступа со 110px до 20px без лишних media-queries */
-    margin-left: clamp(20px, 8vw, 110px);
 }
 
 @media (max-width: 768px) {
