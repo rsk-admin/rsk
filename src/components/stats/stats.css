@@ -1,3 +1,37 @@
+/* Базовое состояние элементов статистики до появления */
+.stats__item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity 0.8s ease-out,
+        transform 0.8s ease-out;
+}
+
+/* Разделитель тоже может красиво проявляться */
+.stats__divider {
+    opacity: 0;
+    transform: scaleY(0);
+    transition:
+        opacity 0.6s ease-out 0.2s,
+        transform 0.6s ease-out 0.2s;
+}
+
+/* Состояние, когда блок появился на экране */
+.stats.is-visible .stats__item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Небольшая задержка для второго элемента, чтобы они шли каскадом */
+.stats.is-visible .stats__item:nth-child(3) {
+    transition-delay: 0.15s;
+}
+
+.stats.is-visible .stats__divider {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
 .stats {
     background-color: #edcd1f;
     padding: 60px 0;
@@ -39,6 +73,10 @@
     background-color: #ffffff;
     flex-shrink: 0;
 }
+
+/* ==========================================================================
+   BREAKPOINTS
+   ========================================================================== */
 
 @media (max-width: 576px) {
     .stats {

@@ -11,15 +11,15 @@ export function initProjects() {
             <div class="project-card__image-wrapper">
                 <img
                     src="${project.image}"
-                    alt="${project.title} (${project.location})"
+                    alt="${project.title} ${project.location ? `(${project.location})` : ""}"
                     class="project-card__image"
                     loading="lazy"
                 />
             </div>
             <div class="project-card__content">
                 <h3 class="project-card__title">
-                    ${project.title}<br />
-                    <span class="project-card__location">${project.location}</span>
+                    ${project.title}
+                    ${project.location ? `<br /><span class="project-card__location">${project.location}</span>` : ""}
                 </h3>
                 
                 <div class="project-card__meta">
@@ -27,7 +27,7 @@ export function initProjects() {
                     <span class="project-card__status">${project.status}</span>
                 </div>
 
-                <a href="${project.link}" class="project-card__btn">Подробнее</a>
+                <a href="/project.html?id=${project.id}" class="project-card__btn">Подробнее</a>
             </div>
         </article>
     `,

@@ -78,12 +78,6 @@ video {
     margin-bottom: clamp(30px, 4vw, 50px);
 }
 
-/* Для секций с выравниванием по левому краю (например, About на десктопе) */
-.section-header--left {
-    align-items: flex-start;
-    text-align: left;
-}
-
 .section-title {
     font-size: clamp(32px, 4vw, 48px);
     font-weight: 400;

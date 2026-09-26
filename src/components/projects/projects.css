@@ -79,7 +79,7 @@
     flex-direction: column;
     gap: 6px;
     margin-bottom: 25px;
-    margin-top: auto; /* Прижимает блок статуса и кнопку к низу карточки */
+    margin-top: auto;
 }
 
 .project-card__year {
