@@ -30,7 +30,7 @@ export function initProjectDetail() {
                             <p>${item.text}</p>
                         </div>
                         <div class="completed-item__image-wrapper">
-                            <img src="${item.image}" alt="" loading="lazy" />
+                            <img src="./${item.image}" alt="" loading="lazy" />
                         </div>
                     </div>
                 `,
@@ -38,7 +38,7 @@ export function initProjectDetail() {
                     .join("")}
                 
                 <div style="margin-top: 40px;">
-                    <a href="/#projects" class="project-detail__back-btn">НАЗАД К ПРОЕКТАМ</a>
+                    <a href="./#projects" class="project-detail__back-btn">НАЗАД К ПРОЕКТАМ</a>
                 </div>
             </div>
         `;
@@ -91,7 +91,7 @@ export function initProjectDetail() {
                         : ""
                 }
 
-                <a href="/#projects" class="project-detail__back-btn">НАЗАД К ПРОЕКТАМ</a>
+                <a href="./#projects" class="project-detail__back-btn">НАЗАД К ПРОЕКТАМ</a>
             </div>
 
             <div class="project-detail__gallery">
@@ -102,7 +102,7 @@ export function initProjectDetail() {
                             : ""
                     }
                     <div class="project-detail__main-wrapper">
-                        <img src="${gallery[0]}" alt="${project.title}" id="gallery-main-img" class="gallery-fade-img" />
+                        <img src="./${gallery[0]}" alt="${project.title}" id="gallery-main-img" class="gallery-fade-img" />
                     </div>
                     ${
                         gallery.length > 1
@@ -118,8 +118,8 @@ export function initProjectDetail() {
                         ${gallery
                             .map(
                                 (img, idx) => `
-                            <button class="project-detail__thumb ${idx === 0 ? "is-active" : ""}" data-src="${img}">
-                                <img src="${img}" alt="" />
+                            <button class="project-detail__thumb ${idx === 0 ? "is-active" : ""}" data-src="./${img}">
+                                <img src="./${img}" alt="" />
                             </button>
                         `,
                             )

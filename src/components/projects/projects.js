@@ -10,7 +10,7 @@ export function initProjects() {
         <article class="project-card">
             <div class="project-card__image-wrapper">
                 <img
-                    src="${project.image}"
+                    src="./${project.image}"
                     alt="${project.title} ${project.location ? `(${project.location})` : ""}"
                     class="project-card__image"
                     loading="lazy"
@@ -27,7 +27,7 @@ export function initProjects() {
                     <span class="project-card__status">${project.status}</span>
                 </div>
 
-                <a href="/project.html?id=${project.id}" class="project-card__btn">Подробнее</a>
+                <a href="./project.html?id=${project.id}" class="project-card__btn">Подробнее</a>
             </div>
         </article>
     `,
