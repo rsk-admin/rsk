@@ -76,8 +76,6 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    transition: transform 0.3s ease;
-    animation: bounce 2s infinite;
 }
 
 .hero__arrow svg {
@@ -87,22 +85,6 @@
 
 .hero__arrow:hover {
     transform: translateY(5px);
-}
-
-@keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(8px);
-    }
-    60% {
-        transform: translateY(4px);
-    }
 }
 
 /* ==========================================================================
@@ -119,12 +101,15 @@
     .hero {
         height: calc(100svh - 70px);
         min-height: 420px;
+
+        background-image: url("/images/heroPoster.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
-    /* Отключаем fixed-позиционирование видео на мобильных устройствах для экономии ресурсов и экономной батареи */
     .hero__video {
-        position: absolute;
-        height: 100%;
+        display: none;
     }
 
     .hero__subtitle {

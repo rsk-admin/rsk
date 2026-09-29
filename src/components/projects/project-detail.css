@@ -277,10 +277,6 @@
     .project-detail__thumb:not(.is-active):hover {
         opacity: 0.8;
     }
-
-    .completed-item__image-wrapper:hover img {
-        transform: scale(1.03);
-    }
 }
 
 /* Планшеты (≤ 992px) */

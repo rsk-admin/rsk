@@ -79,8 +79,8 @@ video {
 }
 
 .section-title {
-    font-size: clamp(32px, 4vw, 48px);
-    font-weight: 400;
+    font-size: clamp(36px, 4vw, 52px);
+    font-weight: 500;
     color: #c6c6c6;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -88,8 +88,8 @@ video {
 }
 
 .section-underline {
-    width: clamp(80px, 10vw, 120px);
-    height: clamp(6px, 1vw, 10px);
+    width: clamp(90px, 10vw, 130px);
+    height: clamp(12.5px, 1vw, 30px);
     background-color: #edcd1f;
 }
 

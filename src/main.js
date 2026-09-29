@@ -21,4 +21,5 @@ import { initProjects } from "./components/projects/projects.js";
 document.addEventListener("DOMContentLoaded", () => {
     initStatsAnimation();
     initProjects();
+    
 });

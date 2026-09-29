@@ -5,36 +5,56 @@
 .about {
     display: flex;
     width: 100%;
-    min-height: 550px;
-    background-color: #f7f5f5;
+    min-height: 680px;
+    background-color: #ffffff;
 }
 
 .about__left {
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: clamp(40px, 5vw, 80px) clamp(20px, 4vw, 50px);
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: clamp(10px, 7vw, 50px) clamp(30px, 4vw, 60px) clamp(40px, 5vw, 80px)
+        clamp(30px, 3vw, 50px);
 }
 
 .about__content {
     width: 100%;
-    max-width: 520px;
+    max-width: 400px;
+}
+
+.about__header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: clamp(30px, 4vw, 50px);
+}
+
+.about__title {
+    font-size: clamp(40px, 4vw, 56px);
+    font-weight: 400;
+    color: #c6c6c6;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+.about__underline {
+    width: clamp(90px, 10vw, 130px);
+    height: clamp(12.5px, 1vw, 30px);
+    background-color: #edcd1f;
+    margin-left: 15px;
 }
 
 .about__text {
-    display: flex;
-    flex-direction: column;
-    gap: clamp(12px, 1.5vw, 16px);
-    font-size: clamp(14px, 0.5vw + 12px, 15px);
-    line-height: 1.65;
-    color: #111111;
+    font-size: clamp(13px, 0.4vw + 12px, 14.5px);
+    color: #222222;
+    text-align: left;
+    padding-left: 15px;
 }
 
 .about__right {
     flex: 1;
     position: relative;
-    min-height: 550px;
     background-image: url("/images/about.webp");
     background-size: cover;
     background-position: center;
@@ -55,22 +75,23 @@
 @media (max-width: 900px) {
     .about {
         flex-direction: column;
-    }
-
-    .about__left {
-        justify-content: center;
-        padding: 50px 24px;
-    }
-
-    .about__content {
-        max-width: 100%;
+        min-height: auto; /* Убираем жесткую высоту, чтобы блок подстраивался под текст */
     }
 
     .about__right {
-        width: 100%;
-        height: 380px;
-        min-height: 380px;
-        background-attachment: scroll;
+        display: none !important; /* Полностью убираем правую часть */
+    }
+
+    .about__left {
+        width: 100%; /* Занимает всю ширину */
+        flex: none; /* Сбрасываем flex-дележку */
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 60px 24px;
+    }
+
+    .about__content {
+        max-width: 100%; /* Контент внутри тянется на всю ширину */
     }
 }
 

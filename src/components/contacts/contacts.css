@@ -57,7 +57,6 @@
 .contacts__list {
     display: flex;
     flex-direction: column;
-    gap: 6px;
 }
 
 .contacts__item {
